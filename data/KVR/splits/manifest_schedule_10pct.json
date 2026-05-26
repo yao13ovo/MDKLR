@@ -1,0 +1,32 @@
+{
+  "dataset": "kvr",
+  "tag": "schedule_10pct",
+  "target_domain": "schedule",
+  "target_ratio": 0.1,
+  "exclude_domains": "",
+  "dev_exclude_target": false,
+  "seed": 1234,
+  "train_stats": {
+    "split": "train",
+    "input": 6290,
+    "output": 4924,
+    "target_domain": "schedule",
+    "target_ratio": 0.1,
+    "exclude_domains": [],
+    "dev_exclude_target": false,
+    "target_in": 1518,
+    "target_kept": 152
+  },
+  "dev_stats": {
+    "split": "dev",
+    "input": 777,
+    "output": 602,
+    "target_domain": "schedule",
+    "target_ratio": 0.1,
+    "exclude_domains": [],
+    "dev_exclude_target": false,
+    "target_in": 195,
+    "target_kept": 20
+  },
+  "myTrain_example": "python myTrain.py -ds=kvr -gpu=True -bsz=32 -target_domain schedule -target_ratio 0.1 "
+}
